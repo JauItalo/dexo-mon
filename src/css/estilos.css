@@ -1,0 +1,224 @@
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #5e5b5bad;
+    color: #333333;
+}
+body.modo-escuro {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header {
+    background-color: #212121;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+
+}
+header .conteudo{
+    display: flex;
+    gap: 32px;
+    
+}
+header .conteudo-natureza,
+header .conteudo-habilidades,
+header .conteudo-moves{
+    color: #d8e3ec;
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+
+header .logo,
+header .imagem-botao {
+    width: 35px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+}
+header .logo:hover,
+header .imagem-botao:hover,
+header .wepb:hover,
+main .main .conteudo-click:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+main{
+    border-top: 0.4px solid #f5f5f5;
+}
+main .conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+main .conteudo-escrito-principal{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+main .conteudo-principal-escrito-titulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: orangered;
+}
+main .conteudo-principal-escrito-subtitulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #96d9d6;
+}
+main .conteudo-click{
+    background-color: #d8e3ec;
+    width: 200px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2F2325;
+}
+main .conteudo-click:hover{
+    background-color: rgba(200, 159, 211, 169);
+}
+main .pika{
+    height: 430px;
+    background: none;
+    border: none;
+}
+main .conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 47px;
+}
+main .conteudo-secundario-titulo{
+    border-top: 0.5px solid #d8e3ec;
+    padding-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #f5f5f5;
+    margin-bottom: 16px;
+}
+main .conteudo-paragrafo-secundario{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 17;
+    color: azure;
+    margin-bottom: 20px;
+}
+main .rodape{
+    padding: 32px;
+    border-top: 0.5px solid #d8e3ec;
+}
+
+
+main {
+    padding: 25px;
+}
+
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemon {
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover {
+    background-color: #96d9d6;
+
+}
+
+.modo-escuro .cartao-pokemon {
+    background-color: #a8a8a8;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+    width: 70px;
+    height: 70px;
+
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama {
+    background-color: #7ac74c;
+}
+
+.veneno {
+    background-color: #df67ddfb;
+}
+
+.fogo {
+    background-color: #dd8130;
+}
+
+.agua {
+    background-color: #6390f0;
+}
+
+.inseto {
+    background-color: #a6b91a;
+}
+
+.voador {
+    background: -webkit-linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
